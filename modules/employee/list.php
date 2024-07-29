@@ -4,7 +4,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-             Daftar Karyawan
+            
             <small></small>
           </h1>
           <ol class="breadcrumb">
@@ -34,10 +34,11 @@
                   <table id="example1" class="table table-bordered table-striped">
                     <thead>
                       <tr style="background:orange;">
-                        <th><input type="checkbox" name="chkall" id="chkall" onclick="return checkall('selector[]');">ID Karyawan</th>
+                        <th>ID Karyawan</th>
                         <th>Daftar Karyawan</th>
-                  
+                        <?php if($_SESSION['type']=='Administrator'){?>
                         <th><center> Action </center></th>
+                        <?php } ?>
                       </tr>
                     </thead>
                     <tbody>
@@ -117,7 +118,7 @@ if($_SESSION['type']=='Administrator'){
   foreach($row as $result) {
 
 
-    echo '<td width="10%"><input type="checkbox" name="selector[]" id="selector[]" value=" '.$result['emp_id'].'"/>'.$result['emp_id'].'</td>';
+    echo '<td width="10%"><name="selector[]" id="selector[]" value=" '.$result['emp_id'].'"/>'.$result['emp_id'].'</td>';
   
     echo'<td> <div class="info-box">
       <!-- Apply any bg-* class to to the icon to color it -->
@@ -140,9 +141,7 @@ if($_SESSION['type']=='Administrator'){
     </div><!-- /.info-box -->
     </td>';
     
-    echo '<td width="20%">
-    <center>              
-    <a id="no" class="btn btn-danger"  style="color:white;" href = "controller.php?action=delrecord&tid='.$result['emp_id'].'"><i class="fa fa-trash"></i> Delete</a>  </center></td>';
+ 
 /*echo '<td width="20%"><center> <a id="no" class="btn btn-primary" href = "index.php?view=edituser&id='.$result['oic_id'].'"><i class="fa fa-pencil"></i> Edit</a> <a id="no" class="btn btn-danger"  style="color:white;" href = "controller.php?action=delrecord&tid='.$result['oic_id'].'"><i class="fa fa-trash"></i> Delete</a>  </center></td>';
 */
     echo '</tr>';
