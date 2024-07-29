@@ -59,13 +59,14 @@
 
 
 
+
 </style>
 </div>
  
 <div class="container" style="width: 450px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);" >
-  <div class="card"></div>
-  <div class="card">
-    <h1 class="title" style="color:black">Login </h1>
+  <div class="card"  ></div>
+  <div class="card"  >
+    <h1 class="title" style="color:black ">Login </h1>
     <form action="#" method="post">
       <div class="input-container" >
         <input AUTOFOCUS type="text"   name="uname" required="required"/>
@@ -78,7 +79,7 @@
         <div class="bar"></div>
       </div>
       <div class="button-container">
-        <button  name="btnlogin"><span>Simpan</span></button>
+        <button  name="btnlogin" style="max-width: 150px; font-size:20px;" ><span>Simpan</span></button>
       </div>
       <div class="footer" style="color:black; font-size:16px;"><strong><span style="color:black;">Jika lupa akun?</span><br><justify><span style="color:;">Silahkan lagsung menghubungi bagian admin</span></justify></strong></div>
     </form>
@@ -141,7 +142,7 @@ if (isset($_POST['btnlogin'])) {
       <?php
     } else {?>
         <script type="text/javascript">
-                alert("Invalid Username or Password, please try again.");
+                alert("Username atau Password tidak sesuai, silahkan coba lagi.");
                 </script>
         <?php
         }  

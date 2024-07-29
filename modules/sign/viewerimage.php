@@ -17,19 +17,18 @@ $id = $_GET['id'];
                 $res= $gid->fetch(PDO::FETCH_ASSOC);  
                 
                $filename = $res['imagefile'];
-               $fullname = $res['fname'].' '.$res['lname'];
-
+               $fullname = $res['fname'];
 ?>
 
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1 id="upr">
-            <?php echo $fullname; ?>'s Signature
-            <small>Manpower Signatures Panel</small>
+            <?php echo $fullname; ?>
+            <small>Barang yang diajukan</small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-            <li class="active">Manpower Signatures Area</li>
+            <li class="active">Tampilan gambar yang diajukan </li>
           </ol>
         </section>
         <hr>

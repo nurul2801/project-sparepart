@@ -80,7 +80,7 @@
           <div class="row">
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
-              <div class="small-box bg-aqua">
+              <div class="small-box bg-yellow">
                 <div class="inner">
 
                 <?php
@@ -90,12 +90,12 @@
 
                 ?>
 
-                  <p>Sparepart IT</p>
+                  <p>Laporan</p>
                 </div>
                 <div class="icon">
-                  <i class="fa ion-android-desktop"></i>
+                  <i class="fa ion-android-document"></i>
                 </div>
-                <a href="<?php echo WEB_ROOT; ?>modules/random/index.php" class="small-box-footer">Lihat Daftar Barang <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo WEB_ROOT; ?>modules/random/index.php" class="small-box-footer">Lihat Daftar Laporan <i class="fa fa-arrow-circle-right"></i></a>
               </div>  
             </div><!-- ./col -->
 
@@ -105,7 +105,7 @@
 
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
-              <div class="small-box bg-yellow">
+              <div class="small-box bg-aqua">
                 <div class="inner">
 
                 <?php
@@ -115,12 +115,12 @@
 
                 ?>
  
-                  <p>Laporan</p>
+                  <p>Sparepart IT</p>
                 </div>
                 <div class="icon">
-                  <i class="fa ion-android-document"></i>
+                  <i class="fa ion-android-desktop"></i>
                 </div>
-                <a href="<?php echo WEB_ROOT; ?>modules/sign/index.php" class="small-box-footer">Lihat Daftar Laporan <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo WEB_ROOT; ?>modules/sign/index.php" class="small-box-footer">Lihat Daftar Sparepart IT <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
 

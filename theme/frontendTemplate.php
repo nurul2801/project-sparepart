@@ -296,40 +296,40 @@ $result = $query->fetchall();
                 <i class="fa fa-dashboard"></i> <span> Dashboard</span>
               </a>
             </li>
-
-            <li class="treeview">
+               <li class="treeview">
               <a href="#">
-                <i class="fa ion-android-desktop text-aqua"></i>
+              <i class="fa ion-android-desktop text-aqua"></i>
                 <span>Sparepart IT</span>
                 
               <?php
-                  $randoms = $conn->query('SELECT COUNT(id) FROM random')->fetchColumn(); 
-                  echo'<span class="label  pull-right bg-aqua">'. $randoms.'</span>';
-                ?>
-              
-              </a>
-                <ul class="treeview-menu">
-                <li><a href="<?php echo WEB_ROOT; ?>modules/random/index.php?view=add"><i class="fa fa-plus text-aqua"></i> Tambah Sparepart IT </a></li>
-                <li><a href="<?php echo WEB_ROOT; ?>modules/random/index.php"><i class="fa fa-search text-aqua"></i> Daftar Sparepart IT</a></li>
-
-              </ul>
-            </li>
-               <li class="treeview">
-              <a href="#">
-                <i class="fa ion-android-document text-yellow"></i>
-                <span>Laporan</span>
-                
-              <?php
                   $sign = $conn->query('SELECT COUNT(sign_id) FROM sign')->fetchColumn(); 
-                  echo'<span class="label  pull-right bg-yellow">'. $sign.'</span>';
+                  echo'<span class="label  pull-right bg-aqua">'. $sign.'</span>';
                 ?>
               
               </a>
               <ul class="treeview-menu">
-                <li><a href="<?php echo WEB_ROOT; ?>modules/sign/index.php?view=add"><i class="fa fa-plus text-yellow"></i>Tambah Laporan</a></li>
-                <li><a href="<?php echo WEB_ROOT; ?>modules/sign/index.php"><i class="fa fa-search text-yellow"></i>Lihat Daftar Laporan</a></li>
+                <li><a href="<?php echo WEB_ROOT; ?>modules/sign/index.php?view=add"><i class="fa fa-plus text-aqua"></i>Tambah Sparepart IT</a></li>
+                <li><a href="<?php echo WEB_ROOT; ?>modules/sign/index.php"><i class="fa fa-search text-aqua"></i>Lihat Daftar Sparepart IT</a></li>
 
               </ul>
+
+              </li>
+
+            <li class="treeview">
+              <a href="#">
+              <i class="fa ion-android-document text-yellow"></i>
+              <span>Laporan</span>
+            <?php
+            $randoms = $conn->query('SELECT COUNT(id) FROM random')->fetchColumn(); 
+            echo'<span class="label  pull-right bg-yellow">'. $randoms.'</span>';
+            ?>
+  
+            </a>
+            <ul class="treeview-menu">
+            <li><a href="<?php echo WEB_ROOT; ?>modules/random/index.php?view=add"><i class="fa fa-plus text-yellow"></i> Tambah Laporan </a></li>
+            <li><a href="<?php echo WEB_ROOT; ?>modules/random/index.php"><i class="fa fa-search text-yellow"></i> Daftar Laporan</a></li>
+
+            </ul>
             </li>
 
             

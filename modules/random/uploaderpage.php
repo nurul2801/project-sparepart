@@ -15,76 +15,6 @@
 
 
 
-<script>
-      function countChar(val) {
-      	var max = 50;
-        var len = val.value.length;
-        if (len >= max) {
-          val.value = val.value.substring(0, 50);
-          $('#charNum').text('You have reached the limit');
-        } else {
-          var char = max - len;
-          $('#charNum').text(char + ' characters left');
-        }
-     };      
-</script>
-
-<script>
-      function countChar0(val) {
-        var max = 40;
-        var len = val.value.length;
-        if (len >= max) {
-          val.value = val.value.substring(0, 40);
-          $('#charNum0').text('You have reached the limit');
-        } else {
-          var char = max - len;
-          $('#charNum0').text(char + ' characters left');
-        }
-     };      
-</script>
-
-
-<script>
-      function countChar1(val) {
-      	var max = 40;
-        var len = val.value.length;
-        if (len >= max) {
-          val.value = val.value.substring(0, 40);
-          $('#charNum1').text('You have reached the limit');
-        } else {
-          var char = max - len;
-          $('#charNum1').text(char + ' characters left');
-        }
-     };      
-</script>
-
-<script>
-      function countChar2(val) {
-        var max = 20;
-        var len = val.value.length;
-        if (len >= max) {
-          val.value = val.value.substring(0, 20);
-          $('#charNum2').text('You have reached the limit');
-        } else {
-          var char = max - len;
-          $('#charNum2').text(char + ' characters left');
-        }
-     };      
-</script>
-
-<script>
-      function countChar3(val) {
-        var max = 100;
-        var len = val.value.length;
-        if (len >= max) {
-          val.value = val.value.substring(0, 70);
-          $('#charNum3').text('You have reached the limit');
-        } else {
-          var char = max - len;
-          $('#charNum3').text(char + ' characters left');
-        }
-     };      
-</script>
 
 </head>
 
@@ -97,7 +27,7 @@
   <fieldset>
                   <div class="form-group">
                     <div class="col-md-6">
-                      <label class="col-md-4 control-label">Nama Barang:</label>
+                      <label class="col-md-4 control-label">Nama Karyawan:</label>
 
                       <div class="col-md-10">
                         <input  name="pname" type="hidden" value="">
@@ -109,12 +39,12 @@
 
 
                      <div class="col-md-6">
-                      <label class="col-md-4 control-label">Yang Mengajukan:</label>
+                      <label class="col-md-4 control-label">Bidang:</label>
 
                       <div class="col-md-10">
                         <input name="cutoff" type="hidden" value="">
                          <input id="upr" class="form-control input-sm"  name="cutoff" placeholder=
-                            "Yang Mengajukan" type="text" onkeyup='countChar0(this)' autocomplete="false" required><label id='charNum0' style="color: blue;"></label><br/>
+                            "Bidang" type="text" onkeyup='countChar0(this)' autocomplete="false" required><label id='charNum0' style="color: blue;"></label><br/>
                       </div>
                     </div>
                     </div>
@@ -123,12 +53,12 @@
 
                   <div class="form-group">
                     <div class="col-md-6">
-                      <label class="col-md-4 control-label">Type:</label>
+                      <label class="col-md-4 control-label">NIP:</label>
 
                       <div class="col-md-10">
                         <input name="projectname" type="hidden" value="">
                          <input id="upr" class="form-control input-sm" name="type" placeholder=
-                            "Type" type="text" onkeyup='countChar1(this)' autocomplete="false" required><label id='charNum1' style="color: blue;"></label> <br/>
+                            "NIP" type="text" onkeyup='countChar1(this)' autocomplete="false" required><label id='charNum1' style="color: blue;"></label> <br/>
                       </div>
                     </div>
 
@@ -136,7 +66,7 @@
 
                      <div class="form-group">
                     <div class="col-md-6">
-                      <label class="col-md-4 control-label">Tanggal Pengajuan:</label>
+                      <label class="col-md-4 control-label">Tanggal Laporan:</label>
 
                       <div class="col-md-10">
                         <input name="projectname" type="hidden" value="">

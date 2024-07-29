@@ -9,7 +9,7 @@
    </h1>
    <ol class="breadcrumb">
      <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-     <li class="active"> Dafftar Alat Sparepart IT</li>
+     <li class="active"> Daftar Laporan</li>
    </ol>
  </section>
  <hr>
@@ -51,7 +51,7 @@ text-transform:capitalize;
                <tr style="background:orange;">
                  
 
-                    <th>Daftar Sparepart IT</th>
+                    <th>Daftar Laporan</th>
                     <th>Actions</th>
 
                </tr>
@@ -100,13 +100,14 @@ foreach($row as $result) {
          echo' </i></span>
          <div class="info-box-content">
 
-           <span id="upr" class="info-box-text">Nama Barang: <b>'.$result['projectname'].'</b></span>
-           <span id="upr" class="info-box-text">Yang Mengajukan: <b>'.$result['cutoff'].'</b></span>
-           <span id="upr" class="info-box-text">Deskripsi: <b>'.$result['fdesc'].'</b></span>
-           <span id="upr" class="info-box-text">Tanggal Pengajuan: <b>'.$result['fdatein'].'</b></span>  
-           <span id="upr" class="info-box-text">Type: <b>'.$result['type'].'</b></span>
-           <span id="upr" class="info-box-text">Uploader: <b>'.$result['fuplder'].'</b></span><br>';
-           
+            <span id="upr" class="info-box-text">Nama Karyawan: <b>'.$result['projectname'].'</b></span>
+            <span id="upr" class="info-box-text">Bidang: <b>'.$result['cutoff'].'</b></span>
+            <span id="upr" class="info-box-text">Deskripsi: <b>'.$result['fdesc'].'</b></span>
+            <span id="upr" class="info-box-text">Tanggal Pengajuan: <b>'.$result['fdatein'].'</b></span>  
+            <span id="upr" class="info-box-text">NIP: <b>'.$result['type'].'</b></span>
+            <span id="upr" class="info-box-text">Uploader: <b>'.$result['fuplder'].'</b></span><br>';
+      
+    
          
            
         echo' </div><!-- /.info-box-content -->
@@ -139,11 +140,11 @@ foreach($row as $result) {
     echo' </i></span>
     <div class="info-box-content">
 
-      <span id="upr" class="info-box-text">Nama Barang: <b>'.$result['projectname'].'</b></span>
-      <span id="upr" class="info-box-text">Yang Mengajukan: <b>'.$result['cutoff'].'</b></span>
+      <span id="upr" class="info-box-text">Nama Karyawan: <b>'.$result['projectname'].'</b></span>
+      <span id="upr" class="info-box-text">Bidang: <b>'.$result['cutoff'].'</b></span>
       <span id="upr" class="info-box-text">Deskripsi: <b>'.$result['fdesc'].'</b></span>
       <span id="upr" class="info-box-text">Tanggal Pengajuan: <b>'.$result['fdatein'].'</b></span>  
-      <span id="upr" class="info-box-text">Type: <b>'.$result['type'].'</b></span>
+      <span id="upr" class="info-box-text">NIP: <b>'.$result['type'].'</b></span>
       <span id="upr" class="info-box-text">Uploader: <b>'.$result['fuplder'].'</b></span><br>';
       
     
@@ -178,7 +179,7 @@ echo '<td width="25%"><center> <a id="no" class="btn btn-success" href = "downlo
 
              <br>
              <div class="pull-left">
-                  <a style="background:#0a0;color:white; box-shadow:0px 2px 2px 1px #777; outline:none; border-radius:50px 50px ;" href="index.php?view=add" class="btn btn-default"><i class="ion ion-person-add"></i> Tambah Data Baru </a>
+                  <a style="background:white;color:black; box-shadow:0px 2px 2px 1px #777; outline:none; border-radius:50px 50px ;" href="index.php?view=add" class="btn btn-default"><i class="ion ion-person-add"></i> Tambah Laporan Baru </a>
  
 
 
