@@ -164,9 +164,9 @@ if($_SESSION['type']=='Administrator'){
                     <br>
                     <div class="pull-left">
                         <?php if($_SESSION['type']=='Administrator'){?>
-                         <a style="background:#0a0;color:white; box-shadow:0px 2px 2px 1px #777; outline:none; border-radius:50px 50px ;" href="index.php?view=add" class="btn btn-default"><i class="ion ion-person-add"></i>Tambah Karyawan Baru</a>
+                         <a style="background:white;color:black; box-shadow:0px 2px 2px 1px #777; outline:none; border-radius:50px 50px ;" href="index.php?view=add" class="btn btn-default"><i class="ion ion-person-add"></i>Tambah Karyawan Baru</a>
         
-                      <button style="background:red;color:white; box-shadow:0px 2px 2px 1px #777; outline:none; border-radius:50px 50px ;" type="submit" class="btn btn-default" name="delete"><i class="fa fa-trash"></i>Hapus Karyawan Yang Dipilih</button>
+                      <button style="background:white;color:black; box-shadow:0px 2px 2px 1px #777; outline:none; border-radius:50px 50px ;" type="submit" class="btn btn-default" name="delete"><i class="fa fa-trash"></i>Hapus Karyawan Yang Dipilih</button>
                     </div><br><br>
                     <?php } ?>
                   </form>

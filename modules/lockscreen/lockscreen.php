@@ -97,7 +97,7 @@ $result = $query->fetchall();
  
     <div class="lockscreen-wrapper">
       <div class="lockscreen-logo">
-       <a href="" style="color:red;l"><b>LOCKED!!!</a>
+       <a href="" style="color:red;l"><b>KUNCI!!!</a>
 
        </div>
  
@@ -134,14 +134,13 @@ $result = $query->fetchall();
 
       </div><!-- /.lockscreen-item -->
       <div class="help-block text-center">
-        Enter your password unlock your account
-      </div>
+      Masukkan kata sandi untuk membuka kunci akun Anda
       <div class="text-center">
-        <a href="?logout">Or sign in as a different user</a>
+        <a href="?logout">Atau masuk sebagai pengguna lain</a>
       </div>
       <div class="lockscreen-footer text-center">
-        Copyright &copy; 2017 <b><a href="" class="text-black">Ennocent</a></b><br>
-        All rights reserved
+        Copyright &copy; 2024 <b></a></b><br>
+        Aplikasi Monitoring Sparepart IT
       </div>
     </div><!-- /.center -->
 
