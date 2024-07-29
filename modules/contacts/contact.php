@@ -150,7 +150,11 @@ echo '</tr>';
 
            </table>  
 
-          
+             <br>
+             <div class="pull-left">
+             <?php if($_SESSION['type']=='Administrator'){?>
+                  <a style="background:white;color:black; box-shadow:0px 2px 2px 1px #777; outline:none; border-radius:50px 50px ;" href="index.php?view=add" class="btn btn-default"><i class="ion ion-person-add"></i>Tambah Kontak</a>
+                  <?php } ?>
 
 
  
